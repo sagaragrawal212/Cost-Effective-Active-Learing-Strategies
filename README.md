@@ -74,4 +74,5 @@ python main.py -runs 3 -d 'cifar10' -n 10 -top_k 2 -k 250  -method 'kmeans' -cf 
 ![image info](https://github.com/sagaragrawal212/Cost-Effective-Active-Learing-Strategies/blob/main/ClusterBasedAL/results.png)
 
 ### References : 
+AlexNet Architecture - Authors: rafik gouiaa <rafikgouiaaphd@gmail.com>, ...
 
