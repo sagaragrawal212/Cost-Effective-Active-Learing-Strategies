@@ -7,7 +7,29 @@ Active learning, a paradigm in machine learning, involves iteratively selecting 
 
 ## Methods :
 
-### Method 1 : 
+### Method 1 :  Cost-Effective Active Learning (CEAL)
+This approach involves initially selecting a random batch of unlabeled data, which is then annotated with the assistance of a human oracle. Subsequently, a pertained Deep Neural Network (Alexnet) is trained using this annotated data. The trained model is then employed to make predictions on unlabeled data points.  The K most informative samples are identified using methods like least confidence, margin sampling and entropy and these are annotated with the oracle. Additionally, samples with high confidence (as determined by a threshold) have their predicted labels treated as pseudo labels, which are incorporated into the labeled set. The model is then updated through further training.
+
+Steps:
+This algorithm follows these key steps:
+1. Take random sample of data points from unlabeled
+dataset.
+2. Annotate these sample using human oracle.
+3. Train a classifier model on this labeled data using pretrained Alexnet.
+4. Use this classifier to predict on remaining unlabeled
+data.
+5. Add the high confidence samples from these unlabeled data, whose entropy is smaller than the threshold
+and their predicted label as pseudo label into labelled
+dataset.
+6. Take K most informative sample by taking K samples
+with highest entropy.
+7. Obtain labels for these K data points from human oracle, and add these K labeled data points to labelled
+dataset.
+8. Go to Step 3, update model by training it on these new
+labeled datasets and repeat iteratively until the desired
+level of accuracy is achieved or a termination criterion
+is met.
+
 
 ### Method 2 Clustering Based Active Learning Algotrithms : 
 
