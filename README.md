@@ -25,3 +25,18 @@ Steps :
 - Evaluate the model's performance.
 - Reiterate the process by sampling the next data points closest to the cluster centroid from each cluster.
 - Go to Step 4 and repeat iteratively until the desired level of accuracy is achieved or a termination criterion is met.
+
+
+#### Code Execution Command : 
+
+**Baseline Random sampling based AL** : 
+
+```
+python main.py -runs 3 -method 'random' -d 'cifar10' -n 10 -top_k 2 -k 250
+```
+
+**PCA K-Means sampling based AL** : 
+
+```
+python main.py -runs 3 -d 'cifar10' -n 10 -top_k 2 -k 250  -method 'kmeans' -cf 1
+```
