@@ -40,3 +40,7 @@ python main.py -runs 3 -method 'random' -d 'cifar10' -n 10 -top_k 2 -k 250
 ```
 python main.py -runs 3 -d 'cifar10' -n 10 -top_k 2 -k 250  -method 'kmeans' -cf 1
 ```
+
+### Results : 
+
+![image info](https://github.com/sagaragrawal212/Cost-Effective-Active-Learing-Strategies/blob/main/ClusterBasedAL/results.png)
