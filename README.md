@@ -1,1 +1,5 @@
 # Cost-Effective-Active-Learing-Strategies.
+
+## Abstract : 
+
+Active learning, a paradigm in machine learning, involves iteratively selecting informative samples for annotation to enhance model performance with minimal labeled data. This research explores innovative methods for achieving cost-effective active learning. We propose two distinct approaches to optimize the annotation process while maintaining model efficacy. The first approach optimizes annotation expenses by leveraging high-confidence samples from the model's predictions in the current iteration as pseudo-labels for training in the next iteration, minimizing the need for extensive oracle feedback. The second method employs an unsupervised technique, utilizing Principal Component Analysis (PCA) for dimensionality reduction and K-means clustering to identify informative regions in the feature space. Samples closer to cluster centroids are then selectively annotated. In this research paper we delve deeper into these two methods and explore the pro's and cons for the same.
