@@ -31,8 +31,9 @@ level of accuracy is achieved or a termination criterion
 is met.
 
 #### Code Execution Command : 
-!python  train_evaluate.py --k 1000 --epochs 10 --max_itr 5 --save_model True
-
+```
+python  train_evaluate.py --k 1000 --epochs 10 --max_itr 5 --save_model True
+```
 For more control over all hyper parameter, follow train_evaluate.py script, it accepts multiple arguments.
 
 
